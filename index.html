@@ -1,0 +1,71 @@
+<html>
+<head>
+    <title></title>
+    <script src="./persona.js"></script> 
+    <script src="./eTipo.js"></script>
+    <script src="./cliente.js"></script>      
+    <script src="./funciones.js"></script> 
+    <link rel="stylesheet" href="./estilo.css"></link>
+</head>
+<body>
+    
+    <div id="formulario" class="contenedor" >
+        <div id="titulo" class="tituloFormulario">
+            <label>ABM Personas</label><br>
+        </div>
+        <label for="nameM">ID:</label><br>
+        <input type="text" id="ID"  name="nameMarca" disabled><br><br>
+        <label for="nameM">Nombre:</label><br>
+        <input type="text" id="nombre"  name="nameMarca"><br><br>
+        <label for="nameM">Apellido:</label><br>
+        <input type="text" id="apellido"  name="nameModelo"><br><br>
+        <label for="nameM">Edad:</label><br>
+        <input type="text" id="edad"  name="price"><br><br>
+            <label for="">Sexo:</label><br>
+            <select id="sexo" name="cuatroporcuatro" class="select">
+                <option value="1"selected>Masculino</option>
+                <option value="2">Femenino</option>
+            </select><br><br>
+        </div>   
+        <input type="button" value="Guardar" id="btnGuardar" name="botonGuardar">     
+        
+        <input type="button" value="Limpiar" id="btnLimpiar" name="botonLimpiar"><br><br>
+
+        <input type="button" value="Promedio" id="promedio" name="botonLimpiar">  <br>
+    </div><br>
+    <div>
+        <label >Filtrar por Nombre</label> <br>
+        <input type="text" id="filtrado" placeholder=""><br><br>
+
+    </div>
+    <div>
+        <label>Campos Mostrados</label>
+        <input type="checkbox" id="idCheck" name=id checked>
+        <label for="idCheck">Id</label>
+        <input type="checkbox" id="nombreCheck" name=nombre checked>
+        <label for="nombreCheck">Nombre</label>
+        <input type="checkbox" id="apellidoCheck" name=apellido checked>
+        <label for="apellidoCheck">Apellido</label>
+        <input type="checkbox" id="edadCheck" name=edad checked>
+        <label for="edadCheck">Edad</label>
+    </div>
+
+    
+    <h2>Lista de Personas</h2>
+    
+        <table border="1" id="tabla" width="75%">
+            <thead>
+                <tr>
+                    <th name="idTabla">ID</th>
+                    <th name="nombreTabla">Nombre</th>
+                    <th name="apellidoTabla">Apellido</th>
+                    <th name="edadTabla">Edad</th>
+                    <th>Sexo</th>
+                </tr>
+            </thead>
+            <tbody id="tCuerpo">
+                
+            </tbody>
+        </table>    
+</body>
+</html>
